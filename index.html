@@ -1,82 +1,92 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GEETHIKA | Portfolio</title>
-  <link rel="stylesheet" href="portfolio.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geethika | Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
 
+<body>
   <header>
-    <nav>
-      <div class="logo">GEETHIKA</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="logo">Geethika</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </header>
 
   <section id="home">
     <div class="intro">
-      <h1>Hello, I'm <span>Geethika</span></h1>
+      <h1>Hello, I'm <span class="highlight">Geethika</span></h1>
       <p>Aspiring Software Developer | CSE Student</p>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
-    <p> Hello! I'm a passionate and curious Computer Science and Engineering student currently in my 3rd year.</p>
+    <p>Hello! I'm Geethika, a passionate and curious Computer Science and Engineering student, currently in my 3rd year. I love exploring how technology can solve real-world problems and make life more creative and efficient.
+    My interests span across web development, problem-solving, and video editing, blending logic with creativity. Whether it’s designing a user-friendly portfolio, debugging a tough piece of code, or editing a visually engaging video — I’m always up for a challenge!
+    I believe learning never stops, and I’m constantly working on improving my skills in HTML, CSS, JavaScript, Python, and Data Structures. I’m also exploring modern tech stacks and freelancing opportunities to turn my passion into impact.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>HTML</li>
       <li>CSS</li>
-      <li>c</li>
-      <li>python</li>
+      <li>C</li>
+      <li>Python</li>
       <li>Java</li>
-      <li>DS</li>
+      <li>Data Structures</li>
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="achievements" class="fade-in">
+    <h2>Achievements</h2>
+    <ul class="skills-list">
+      <li>🎓 Completed 30+ leetcode problems</li>
+      <li>📜NPTEL Certified in DBMS</li>
+      <li>🎮Done Internship in AICTE</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
     <div class="projects-container">
       <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Short description</p>
-        <a href="#">View Project</a>
+        <img src="calculator.png" alt="Calculator">
+        <h3>Simple Calculator</h3>
+        <p>Basic operations like add, subtract, multiply, divide using HTML, CSS and JS.</p>
+        <a href="https://geethika9512.github.io/CodeAlpha_Calculator/" target="_blank">View Project</a>
       </div>
-      
+      <div class="project-card">
+        <img src="youtube.png" alt="YouTube Clone">
+        <h3>Youtube clone</h3>
+        <p>The youtube structure using HTML & CSS.</p>
+        <a href="https://geethika9512.github.io/youtube/" target="_blank">View Project</a>
+      </div>
     </div>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="resume.pdf" download>Download Resume (PDF)</a></p>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <form action="mailto:geethika9512@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:geethika9512@gmail.com">geethika9512@gmail.com</a></p>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Geethika</p>
   </footer>
 
-  <script src="script.js"></script>
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script src="portfolio.js"></script>
 </body>
 </html>
